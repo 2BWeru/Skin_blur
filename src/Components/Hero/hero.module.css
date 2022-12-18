@@ -1,0 +1,119 @@
+.container{
+    padding: 0rem 2rem;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+
+.wrapper{
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    position: relative;
+}
+.wrapper>img{
+    width: 10rem;
+    position:absolute;
+    bottom: 0;
+}
+.blueCircle{
+    width: 20rem;
+    height: 20rem;
+    border-radius:50%;
+    z-index: -99;
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(135.74deg, #0bb5ff 14.09%, #6dd3fe 83.81%);
+}
+.cart2{
+    position: absolute;
+    bottom: 25%;
+    left: 65%;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.cart2>svg{
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 50%;
+    border: 6px solid black;
+}
+.signup{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    font-size: 0.8rem;
+    border-radius: 15px;
+    box-shadow: var(--shadow1);
+    position: absolute;
+    bottom: 25%;
+    left:75%;
+    
+}
+.signup>:first-child{
+    display: block;
+    width: 6rem;
+
+}
+.signup>:nth-child(2){
+    border-radius: 50%;
+    border: 1px solid skyblue;
+    display: flex;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.h_sides{
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    gap:2rem;
+
+}
+.text1{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    width: min-content;
+    display: block;
+    font-weight: 500;
+}
+.text2{
+    display: flex;
+    flex-direction: column;
+    width: min-content;
+}
+.text2>:first-child{
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+.text2>:nth-child(2){
+    display: block;
+
+}
+
+.traffic{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+
+}
+.traffic>:first-child{
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.customers{
+    display: flex;
+    flex-direction: column;
+    text-align: right; 
+}
+.customers>:first-child{
+    font-size: 1.5rem;
+    font-weight: 800;
+}
