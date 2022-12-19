@@ -1,6 +1,8 @@
 import Header from "./Components/Header/header";
 import Hero from "./Components/Hero/hero";
-import Slider from "./Components/slider/slider"
+import Slider from "./Components/slider/slider";
+import Virtual from "./Components/Virtual/virtual";
+import Products from "./Components/Products/products";
 
 function App() {
   return (
@@ -8,6 +10,8 @@ function App() {
       <Header />
       <Hero />
       <Slider />
+      <Virtual />
+      <Products />
     </div>
   );
 }
