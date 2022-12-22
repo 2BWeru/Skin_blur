@@ -22,7 +22,7 @@ function Hero () {
             {/* middle side */}
             <div className={css.wrapper}>
                 <div className={css.blueCircle}></div>
-                <img src={hero} al=""></img>
+                <img src={hero} alt="hero"></img>
 
                 <div className={css.cart2}>
                     <FaOpencart />
