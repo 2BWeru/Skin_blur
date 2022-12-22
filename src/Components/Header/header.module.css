@@ -11,7 +11,8 @@
     gap: 1rem;
 }
 .logo span{
-    font-weight: 200;
+    font-weight: 900;
+    color: #ee9b00;
 
 }
 
@@ -30,7 +31,7 @@
 }
 
 .menu>li:hover{
-    color: rgb(255, 128, 82);
+    color: #2d6a4f;
     cursor: pointer;
 }
 .search{

@@ -9,7 +9,7 @@ function Header() {
          
          <div className={css.logo}>
              <img src={logo} alt="logo" height={100}></img>
-             <span>SkinbLa</span>
+             <span>SkinbLur</span>
          </div>
 
          <div className={css.right}>
