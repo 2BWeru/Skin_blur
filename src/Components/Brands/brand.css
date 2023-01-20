@@ -1,0 +1,187 @@
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px 25px;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 700px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    margin-left: 10rem;
+}
+.styled-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+}
+.styled-table th,
+.styled-table td {
+    padding: 22px 15px;
+}
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
+
+
+.c-container{
+    display: flex;
+
+}
+.c-header{
+ display:flex;
+ gap: 2rem;
+ flex:1;
+ align-items: center;
+
+}
+.c-nav{
+    display:flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center; 
+    cursor: pointer;
+}
+ul li{
+
+}
+.c-list{
+    display:flex;
+    gap: 2rem;
+    font-weight: 600;
+    list-style: none;
+    font-size: 1.4rem;
+
+}
+.c-list li:hover{
+    color:#009879;
+}
+.c-wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px,2fr));
+    height: 50rem;
+    /* overflow: scroll; */
+    grid-gap:3rem;
+    margin: 2rem 2rem;
+    justify-content: space-between;
+}
+.c-card{
+    width: 22rem;
+    height: 14rem;
+    background-color: white;
+    position: relative;
+    overflow:hidden;
+    padding: 2rem;
+    display: flex;
+    border-radius: 1rem;
+    
+}
+.c-card span {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    font-size: 1.4rem;
+    /* padding-top:2rem; */
+}
+.c-card img{
+    width: 20rem;
+    height: 10rem;
+}
+
+.name{
+    color: #d7900b;
+}
+.c-text{
+    display: flex;
+    flex-direction: row;
+}
+.c-icon{
+    padding: 1rem 2.5rem;
+    width: 2rem;
+    height: 2rem;
+    /* padding-bottom:8rem; */
+}
+.c-icon:hover{
+    color: darkgoldenrod;
+}
+.cart-image{
+    width: 3rem;
+    height: 3rem;
+}
+.checkout-button{
+    margin: 2rem 0;
+}
+.image-brand{
+    width: 20rem;
+}
+
+/* The alert message box */
+.alert {
+    position: relative;
+    padding: 1rem 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+  }
+  .error {
+    color: #842029;
+    background-color: #f8d7da;
+    border-color: #f5c2c7;
+  }
+  
+  .success {
+    color: #0f5132;
+    background-color: #d1e7dd;
+    border-color: #badbcc;
+  }
+  
+  .warning {
+    color: #664d03;
+    background-color: #fff3cd;
+    border-color: #ffecb5;
+  }
+  .primary {
+    color: #084298;
+    background-color: #cfe2ff;
+    border-color: #b6d4fe;
+  }
+  
+  .secondary {
+    color: #41464b;
+    background-color: #e2e3e5;
+    border-color: #d3d6d8;
+  }
+  
+  .info {
+    color: #055160;
+    background-color: #cff4fc;
+    border-color: #b6effb;
+  }
+  /* The close button */
+  .closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  /* When moving the mouse over the close button */
+  .closebtn:hover {
+    color: black;
+  }
+  .hide {
+    display: none;
+  }
