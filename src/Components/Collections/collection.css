@@ -1,0 +1,59 @@
+.c-container{
+    display: flex;
+
+}
+.c-header{
+ display:flex;
+ gap: 2rem;
+ flex:1;
+ align-items: center;
+
+}
+.c-nav{
+    display:flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center; 
+    cursor: pointer;
+}
+.c-list{
+    display:flex;
+    gap: 2rem;
+    font-weight: 500;
+    list-style: none;
+}
+.c-wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px,2fr));
+    height: 50rem;
+    /* overflow: scroll; */
+    grid-gap:3rem;
+    margin: 2rem 2rem;
+    justify-content: space-between;
+}
+.c-card{
+    width: 22rem;
+    height: 16rem;
+    background-color: white;
+    position: relative;
+    overflow:hidden;
+    padding: 1rem;
+    display: flex;
+    border-radius: 1rem;
+}
+.c-card span{
+    align-items: center;
+    font-weight: bold;
+    padding: 1rem 1rem;
+    justify-content: center;
+}
+.c-card p {
+    align-items: center;
+    font-weight: bold;
+    padding: 1rem 1rem;
+    justify-content: center;
+}
+.c-card img{
+    width: 15rem;
+    height: 10rem;
+}
