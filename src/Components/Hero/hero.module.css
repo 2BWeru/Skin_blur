@@ -23,7 +23,7 @@
     position: absolute;
     bottom: 0;
     top:-3rem;
-    background: linear-gradient(135.74deg, #0bb5ff 14.09%, #6dd3fe 83.81%);
+    background: linear-gradient(135.74deg, #d4a373 14.09%, #6dd3fe 83.81%);
 }
 .cart2{
     position: absolute;
@@ -119,3 +119,57 @@
     font-weight: 800;
 }
 
+@media screen and (max-width: 664px) {
+    .signup{
+        display: none;
+    }
+    .blueCircle{
+        display: none;
+    }
+    .wrapper>img{
+        display: none;
+
+    }
+    .cart2{
+        display:none;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+.text1 .text2 > span:nth-child(2){
+    font-size: .3rem;
+    text-align: justify;
+}
+.text2 > span:nth-child(1),
+.traffic > span:nth-child(1),
+.customers > span:nth-child(1) {
+    font-size: 1.5rem;
+    text-align: left;
+}
+.text2 > span:nth-child(2),
+.traffic > span:nth-child(2),
+.customers > span:nth-child(2) {
+    font-size: .9rem;
+    text-align: left;
+}
+.blueCircle{
+    position: absolute;
+    width: 80%;
+    height: 100%;
+}
+.wrapper>img{
+    width: 40%;
+    height: 100%;
+}
+.signup{
+    margin-top:10rem;
+}
+.container{
+    grid-template-areas: 
+    left center center
+    right center right
+    ;
+}
+
+}
