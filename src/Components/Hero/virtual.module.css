@@ -2,11 +2,15 @@
     margin-top: 6rem;
     margin-bottom: 6rem;
     padding: 2rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
     display: flex;
     justify-content: space-around;
+    background-color: #344e41;
+    width: 95%;
 }
 .left{
-    top:6rem;
+    top:12rem;
     display: flex;
     flex-direction: column;
     gap:2rem;
@@ -36,9 +40,81 @@
 
 }
 .wrapper{
-    width:15rem;
+    width:25rem;
     border-radius: 10px;
     padding: 1rem;
     box-sizing: border-box;
     overflow: hidden;
+}
+.virtual-image{
+    width: 22rem;
+}
+
+@media screen and (max-width: 669px) {
+ .Virtual{
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    margin-left: 1rem;
+    margin-right: 5rem;
+    display: flex;
+    flex-direction: column;
+}
+.left{
+    top:2rem;
+    display: flex;
+    flex-direction: column;
+    bottom: 2rem;
+    gap:2rem;
+    left: 5rem;
+    position: relative;
+}
+.left>:nth-child(1){
+    font-size: 2rem;
+    text-transform: uppercase;
+    display: block;
+    font-weight: bold;
+}
+.left>:nth-child(2){
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    display: block;
+
+}
+.left>:nth-child(3){
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+.left > img{
+    margin-top: 2rem;
+
+    /* position: absolute; */
+    width: 1rem;
+    bottom:10rem;
+
+}
+
+.wrapper{
+    margin-top: 6rem;
+    margin-left: 3rem;
+    width:20rem;
+    border-radius: 10px;
+    padding: 1rem;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.virtual-image{
+    margin-top: 3rem;
+    width: 2rem;
+    height: 10rem
+}
+};
+
+
+@media screen and (max-width: 994px) {
+  
+
 }
