@@ -1,13 +1,86 @@
-.styled-table {
+/* Section One*/
+
+th { background: #009879;}
+table {
+        border-collapse: collapse;
+        border: 1px solid #cdcdcd;
+        font: normal 12px arial; 
+        width: 100%;
+}
+td, th { border: 1px solid #cdcdcd; padding: 2px;}
+
+/* Section two*/
+
+@media only screen and (max-width: 960px),
+(min-device-width: 968px) and (max-device-width: 1024px)  {
+        /* Section three*/
+                table, thead, tbody, th, td, tr { 
+                        display: block; 
+                }
+                /* Section four*/
+                thead tr { 
+                        position: absolute;
+                        top: -9999px;
+                        left: -9999px;
+                }
+                
+                tr { border-bottom: 1px solid #ccc; }
+/* Section five*/
+                td { 
+                     border: none;
+                     border-bottom: 1px solid #eee; 
+                     position: relative;
+                     padding-left: 50%; 
+                }
+                td:before { 
+                        position: absolute;
+                        top: 3px;
+                        left: 6px;
+                        width: 45%; 
+                        padding-right: 10px; 
+                        white-space: nowrap;
+                        font-weight: bold;
+                }
+                /* Section six*/
+
+                td:nth-of-type(1):before { content: "Brand Name";padding-right: 2rem; }
+                td:nth-of-type(2):before { content: "Price $"; padding-right: 2rem;}
+                td:nth-of-type(3):before { content: "Image";padding-right: 2rem; }
+                td:nth-of-type(4):before { content: "Add "; padding-right: 2rem;}
+                td:nth-of-type(5):before { content: "Remove "; padding-right: 2rem;}
+               
+}
+
+/* Section seven*/
+        @media only screen
+        and (min-device-width : 320px)
+        and (max-device-width : 480px) {
+                body { 
+                        padding: 0; 
+                        margin: 0; 
+                        width: 520px; }
+                }
+/* Section eight*/
+        @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+          body { 
+                        width: 495px; 
+                }
+        }
+
+
+
+
+
+/* .styled-table {
     border-collapse: collapse;
     margin: 25px 25px;
-    font-size: 0.9em;
-    font-family: sans-serif;
+    font-size: 1.1rem;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     min-width: 700px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
     margin-left: 10rem;
-}
-.styled-table thead tr {
+} */
+ thead tr {
     background-color: #009879;
     color: #ffffff;
     text-align: left;
@@ -15,6 +88,7 @@
 .styled-table th,
 .styled-table td {
     padding: 22px 15px;
+    cursor: pointer;
 }
 .styled-table tbody tr {
     border-bottom: 1px solid #dddddd;
@@ -35,6 +109,7 @@
 
 .c-container{
     display: flex;
+    height: 100%;
 
 }
 .c-header{
@@ -51,9 +126,7 @@
     justify-content: center; 
     cursor: pointer;
 }
-ul li{
 
-}
 .c-list{
     display:flex;
     gap: 2rem;
@@ -68,54 +141,84 @@ ul li{
 .c-wrapper{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px,2fr));
-    height: 50rem;
-    /* overflow: scroll; */
-    grid-gap:3rem;
+    height: 100rem;
+    padding-bottom: 2rem;
+    overflow: scroll;
+    grid-gap:4rem;
     margin: 2rem 2rem;
     justify-content: space-between;
 }
-.c-card{
+.card {
     width: 22rem;
-    height: 14rem;
-    background-color: white;
+    height: 18rem;
+    padding: .8em;
+    background: #f5f5f5;
     position: relative;
-    overflow:hidden;
-    padding: 2rem;
+    overflow: visible;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+   }
+   
+   .card-img {
+    width: 10rem;
+    height: 9rem;
+    border-radius: .5rem;
+    transition: .3s ease;
+   }
+   
+   .card-info {
+    padding-top: 3%;
+   }
+   
+   svg {
+    width: 20px;
+    height: 20px;
+   }
+   
+   .card-footer {
+    width: 100%;
     display: flex;
-    border-radius: 1rem;
-    
-}
-.c-card span {
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+   }
+   
+   /*Text*/
+   .text-title {
+    font-weight: 900;
+    font-size: 1.2em;
+    line-height: 1.5;
+   }
+   
+   .text-body {
+    font-size: .9em;
+    /* padding-bottom: 7px; */
+   }
+   
+   /*Button*/
+   .card-button {
+    border: 1px solid #252525;
     display: flex;
-    flex-direction: column;
-    font-weight: bold;
-    font-size: 1.4rem;
-    /* padding-top:2rem; */
-}
-.c-card img{
+    padding: .3em;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: .3s ease-in-out;
+   }
+   
+   /*Hover*/
+   .card-img:hover {
+    transform: translateY(-25%);
+    box-shadow: rgba(226, 196, 63, 0.25) 0px 13px 47px -5px, rgba(180, 71, 71, 0.3) 0px 8px 16px -8px;
+   }
+   
+   .card-button:hover {
+    border: 1px solid #009879;
+    background-color: #0f5132;
+   }
+   
+.card img{
     width: 20rem;
-    height: 10rem;
-}
-
-.name{
-    color: #d7900b;
-}
-.c-text{
-    display: flex;
-    flex-direction: row;
-}
-.c-icon{
-    padding: 1rem 2.5rem;
-    width: 2rem;
-    height: 2rem;
-    /* padding-bottom:8rem; */
-}
-.c-icon:hover{
-    color: darkgoldenrod;
-}
-.cart-image{
-    width: 3rem;
-    height: 3rem;
+    height: 13rem;
 }
 .checkout-button{
     margin: 2rem 0;
@@ -185,3 +288,129 @@ ul li{
   .hide {
     display: none;
   }
+
+  /* button */
+  .clearButton{
+    margin-left: 48rem;
+  }
+  button {
+    outline: none;
+    cursor: pointer;
+    border: none;
+    padding: 0.9rem 2rem;
+    margin-left: 25rem;
+    font-family: inherit;
+    font-size: inherit;
+    position: relative;
+    display: inline-block;
+    letter-spacing: 0.05rem;
+    font-weight: 700;
+    font-size: 17px;
+    border-radius: 500px;
+    overflow: hidden;
+    background: #009879;
+    color: ghostwhite;
+   }
+   
+   button span {
+    position: relative;
+    z-index: 10;
+    transition: color 0.4s;
+   }
+   
+   button:hover span {
+    color: black;
+   }
+   
+   button::before,
+   button::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+   }
+   
+   button::before {
+    content: "";
+    background: #000;
+    width: 120%;
+    left: -10%;
+    transform: skew(30deg);
+    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+   }
+   
+   button:hover::before {
+    transform: translate3d(100%, 0, 0);
+   }
+ 
+
+   @media screen and (max-width: 640px) {
+    button {
+      outline: none;
+      cursor: pointer;
+      border: none;
+      padding: 0.9rem 2rem;
+      margin-top: 2rem;
+      margin-left: 5rem;
+      font-family: inherit;
+      font-size: inherit;
+      position: relative;
+      display: inline-block;
+      letter-spacing: 0.05rem;
+      font-weight: 700;
+      font-size: 17px;
+      border-radius: 500px;
+      overflow: hidden;
+      background: #009879;
+      color: ghostwhite;
+     }
+     .clearButton{
+      margin-left: 1rem;
+      margin-bottom: 1rem;
+    }
+    .card {
+      width: 16rem;
+      height: 18rem;
+      padding: .8em;
+      background: #f5f5f5;
+      position: relative;
+      overflow: visible;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+     }
+     .card img{
+      width: 14rem;
+      height: 13rem;
+  }
+
+   }
+
+
+   @media screen and (max-width: 994px) {
+    button {
+      outline: none;
+      cursor: pointer;
+      border: none;
+      padding: 0.9rem 2rem;
+      margin-top: 2rem;
+      margin-left: 5rem;
+      font-family: inherit;
+      font-size: inherit;
+      position: relative;
+      display: inline-block;
+      letter-spacing: 0.05rem;
+      font-weight: 700;
+      font-size: 17px;
+      border-radius: 500px;
+      overflow: hidden;
+      background: #009879;
+      color: ghostwhite;
+     }
+     .clearButton{
+      margin-left: 1rem;
+      margin-bottom: 1rem;
+    }
+
+   }
+
