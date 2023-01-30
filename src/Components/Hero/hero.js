@@ -125,7 +125,7 @@ function Hero () {
             {/* right side */}
             <div className={virtual.right}>
                 <div className={virtual.wrapper}>
-                <ReactCompareImage
+                <ReactCompareImage className="virtual-image"
                     leftImage={before}
                     rightImage={after}
                 >
@@ -176,12 +176,12 @@ function Hero () {
           <div className={footer.cFooter}>
               <div className={footer.logo}>
                 <img src={logo} alt="logo"/>
-                    <span>SkinBlur</span>
+                    {/* <span>SkinBlur</span> */}
               </div>
 
               <div className={footer.Block}>
                 <div className={footer.detail}>
-                    <span>Contact Us</span>
+                    <p className={footer.headtext}><u>Contact Us</u></p>
                     <span className={footer.pngLine}>
                         <ImLocation2  className={footer.icon}/>
                         <span> Nairobi, Kenya</span>
@@ -202,20 +202,36 @@ function Hero () {
 
               <div className={footer.Block}>
                 <div className={footer.detail}>
-                    <span>Resources</span>
+                    <p className={footer.headtext}><u>Resources</u></p>
                     <span className={footer.pngLine}>
                         <IoIosHand className={footer.icon}/>
                         <span>Sign In</span>
+                    </span>
+                    <span className={footer.pngLine}>
+                        <IoIosHand className={footer.icon}/>
+                        <span>Log In</span>
+                    </span>
+                    <span className={footer.pngLine}>
+                        <IoIosHand className={footer.icon}/>
+                        <span>About Us</span>
                     </span>
                 </div>
               </div>
 
               <div className={footer.Block}>
                 <div className={footer.detail}>
-                    <span>Company</span>
+                    <p className={footer.headtext}><u>Company</u></p>
                     <span className={footer.pngLine}>
                         <BiLink  className={footer.icon}/>
-                        <span>Safety Privacy & Terms</span>
+                        <span>Privacy Policy</span>
+                    </span>
+                    <span className={footer.pngLine}>
+                        <BiLink  className={footer.icon}/>
+                        <span>Terms of Service</span>
+                    </span>
+                    <span className={footer.pngLine}>
+                        <BiLink  className={footer.icon}/>
+                        <span>Cookie Settings</span>
                     </span>
                 </div>
               </div>
