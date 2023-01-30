@@ -33,66 +33,83 @@ export const SliderProducts = [
 }
 ]
 
+
 export const SkinProducts = [
     {
         name: "JOVYAL",
         detail:"Vitamin C",
         price:"20",
         img:img14,
+        brand:"Unsun",
     },
     {
         name: "EBNY",
         detail:"Cleanser",
         price:"40",
         img:img5,
+        brand:"Hyper Skin",
     },
     {
         name: "SKINBLUR",
         detail:"Moisturizer",
         price:"45",
         img:img6,
+        brand:"Hanahana Beauty", 
     },
     {
         name: "MELBONY V",
         detail:"Toner",
         price:"20",
         img:img7,
+        brand:"Sharni daden",
     },
     {
         name: "BLUEKING",
         detail:"Cleanser",
         price:"40",
         img:img8,
+        brand:"Sharni daden",
+
     },
     {
         name: "SKANZA",
         detail:"Moisturizer",
         price:"45",
         img:img9,
+        brand:"Hanahana Beauty", 
+
     },
     {
         name: "MULLY",
         detail:"Toner",
         price:"20",
         img:img10,
+        brand:"Hyper Skin",
+
     },
     {
         name: "BLACKY LOP",
         detail:"Cleanser",
         price:"40",
         img:img11,
+        brand:"Unsun",
+
     },
     {
         name: "SKYLLA",
         detail:"Toner",
         price:"45",
         img:img12,
+        brand:"Unsun",
+
     },
     {
         name: "MOTIM",
         detail:"Vitamin C",
         price:"20",
         img:img13,
+        brand:"Hanahana Beauty", 
+
     },
    
     ]
