@@ -1,7 +1,68 @@
+@media screen and (max-width: 992px) {
+  
+  .bars{
+    display: block;
+  }
 
+.right{
+  top: 3rem;
+  position:absolute;
+  right:2rem;
+  z-index: 9999;
+  border-radius: 5px;
+  color:aliceblue;
+  background-color: #344e41;
+  flex-direction: column;
+  padding: 1rem;
+}
+.menu{
+  flex-direction: column;
+
+}
+.bars{
+  display: block;
+}
+.search{
+  display: none;
+}
+.searchIcon{
+  display: none;
+
+}
+}
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 640px) {
+ 
+  .right{
+    top: 3rem;
+    position:absolute;
+    right:2rem;
+    z-index: 9999;
+    border-radius: 5px;
+    color:aliceblue;
+    background-color: #344e41;
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .menu{
+    flex-direction: column;
+
+  }
+  .bars{
+    display: block;
+  }
+  .search{
+    display: none;
+  }
+  .searchIcon{
+    display: none;
+  }
+}
 .Header{
   display: flex;
-  padding: 1.5rem;
+  padding: 1.2rem;
+  background-color: #344e41;
+  margin-bottom: 5rem;
   
 }
 .logo{
@@ -13,6 +74,7 @@
 .logo span{
   font-weight: 900;
   color: #ee9b00;
+  font-size: 3rem;
 
 }
 
@@ -22,12 +84,16 @@
  gap: 2rem;
  align-items: center;
  justify-content: center; 
+
 }
 .menu{
   display:flex;
   gap: 2rem;
   font-weight: 500;
   list-style: none;
+  font-size: 1.4rem;
+  color: black;
+
 }
 
 .menu>li:hover{
@@ -37,10 +103,18 @@
 .search{
   outline: none;
   border: none;
-  width: 7rem;
+  width: 12rem;
   border-radius: 5px;
   padding: 0.5rem;
 }
+a {
+  color: wheat;
+}
+
+a:hover {
+  color: #ee9b00;
+}
+
 .cart{
   height: 1.5rem;
   width: 1.5rem;
